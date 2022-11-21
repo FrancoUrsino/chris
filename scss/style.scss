@@ -1,0 +1,111 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Prompt', sans-serif;;
+}
+
+.header{
+  background: radial-gradient(rgba(0, 0, 0, 0.7), rgba(79, 79, 79, 0.7)), url(../img/trnava-university-_9xRHrMOjeg-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+  .nav{
+    display: flex;
+    justify-content: flex-end;
+    justify-items: center;
+    align-items: center;
+
+    &__logo{
+      padding-top: 5px;
+      object-fit: cover;
+      justify-items: center;
+      align-items: center;
+    }
+
+    &__link{
+      font-size: 1.4rem;
+      color: rgb(255, 255, 255);
+      padding: 5px;
+      
+      &:hover{
+        color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 5px;
+      }
+    }
+  }
+
+
+  &__title{
+    font-size: 5rem;
+    font-weight: bold;
+    color: white;
+    padding: 100px 50px 30px;
+    text-align: center;
+    background: linear-gradient(to right, #ffffffbe, #ffffff)0 0 / 400% 100%;
+    animation: move-bg 4s infinite reverse;
+    background-clip: var(-webkit-background-clip);
+    -webkit-background-clip: text;
+    color: transparent;
+
+    @keyframes move-bg {
+      to{
+        background-position: 400% 0;}
+    }
+  }
+
+  &__subTitle{
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(87, 97, 162);
+    text-shadow: 1px 1px 4px rgba(122, 111, 180, 0.649);
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.information__text{
+  font-size: 1.5rem  
+}
+
+.information__info{
+  background-color: rgb(217, 217, 217);
+  margin: 20px 40px;
+  text-align: center;
+  padding: 5px 10px;
+
+  .information__title{
+    text-transform: uppercase;
+    color: rgb(87, 97, 162);
+  }
+
+  .information__list{
+    list-style: none;
+    line-height: 1.5rem;
+    padding: 0;
+  }
+
+  .information__item{
+    font-weight: 100;
+  }
+}
+
+.AboutUs{
+  display: grid;
+  grid-template-rows: 200px 1fr;
+  margin: 30px 0;
+
+ &__text{
+  text-align: center;
+  margin: 0 30px;
+ }
+
+ &__img{
+  justify-self: center;
+
+ }
+}
+
+
