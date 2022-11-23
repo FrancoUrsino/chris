@@ -1,0 +1,61 @@
+.header{
+  background: radial-gradient(rgba(0, 0, 0, 0.7), rgba(79, 79, 79, 0.7)), url(../img/header.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  overflow: hidden;
+
+  .nav{
+    display: flex;
+    justify-content: flex-end;
+    justify-items: center;
+    align-items: center;
+
+    &__logo{
+      padding-top: 5px;
+      object-fit: cover;
+      justify-items: center;
+      align-items: center;
+    }
+
+    &__link{
+      font-size: 1.4rem;
+      color: $white;
+      padding: 5px 20px;
+      
+      &:hover{
+        color: $white;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 5px 10px;
+      }
+    }
+  }
+
+
+  &__title{
+    font-size: 5rem;
+    font-weight: bold;
+    color: $white;
+    padding: 100px 50px 30px;
+    text-align: center;
+    background: linear-gradient(to right, #ffffffbe, #ffffff)0 0 / 400% 100%;
+    animation: move-bg 4s infinite reverse;
+    background-clip: var(-webkit-background-clip);
+    -webkit-background-clip: text;
+    color: transparent;
+
+    @keyframes move-bg {
+      to{
+        background-position: 400% 0;}
+    }
+  }
+
+  &__subTitle{
+    font-size: 2rem;
+    font-weight: bold;
+    color: $blue;
+    text-shadow: 1px 1px 4px rgba(122, 111, 180, 0.649);
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

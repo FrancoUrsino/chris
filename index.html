@@ -7,12 +7,14 @@
   <title>Document</title>
   <!--LINK BS CSS-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <!--LINK CSS-->
-  <link rel="stylesheet" href="css/style.css">
+  <!--LINK BS ICONS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
   <!--LINK FUENTE-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <!--LINK CSS-->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="header">
@@ -24,19 +26,19 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: flex-end;">
           <ul class="navbar-nav">
-            <li class="nav-item">
+            <li class="nav-item nav__item">
               <a class="nav-link nav__link" aria-current="page" href="#">Inicio</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item nav__item">
               <a class="nav-link nav__link" href="#">Quienes Somos</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item nav__item">
               <a class="nav-link nav__link" href="#">Servicios</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item nav__item">
               <a class="nav-link nav__link" href="#">Clientes</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item nav__item">
               <a class="nav-link nav__link" href="#">Contactanos</a>
             </li>
           </ul>
@@ -72,6 +74,61 @@
     <section class="AboutUs">
       <p class="AboutUs__text">CONTAMOS CON PROFESIONALES MATRICULADOS CON ASISTENCIA A CURSOS DE CAPACITACION TECNICA NACIONAL E INTERNACIONAL, CON OBTENCION DE CERTIFICACIONES PARA INSTALAR, CONSERVAR Y REPARAR DISTINTOS TIPOS Y MODELOS DE EQUIPAMIENTOS EN ELECTROMEDICINA.</p>
       <img src="img/4.jpg"  class="AboutUs__img" alt="">
+      <h2 class="AboutUs__SubTitle">Sectores en los que trabajamos</h2>
+
+      <!--INFORMATICA-->
+      <div class="card__container">
+        <div class="card__container--container">
+          <img src="img/laptop-_1_.svg" alt="" class="card__icon">
+          <h3 class="card__title">informática</h3>
+          <p class="card__text">software | Hardware</p>
+          <p class="card__text">Mantenimiento</p>
+          <p class="card__text">Armado de Equipamiento</p>
+        </div>
+        <div class="card__container--container">
+          <img src="img/chemistry.svg" alt="" class="card__icon">
+          <h3 class="card__title">laboratorios</h3>
+          <p class="card__text">serología - biológica molecular - patología</p>
+          <p class="card__text">histocompatibilidad - citrogenética</p>
+        </div>
+        <div class="card__container--container">
+          <img src="img/spa.svg" alt="" class="card__icon">
+          <h3 class="card__title">medicina estética</h3>
+          <p class="card__text">luz pulsada - criolipólisis</p>
+          <p class="card__text">cavitadores - ultrasonido</p>
+          <p class="card__text">plasma rico en plaquetas</p>
+        </div>
+        <div class="card__container--container">
+          <img src="img/tester.svg" alt="" class="card__icon">
+          <h3 class="card__title">calibraciones</h3>
+          <p class="card__text">pipetas mecánicas y electronicas</p>
+          <p class="card__text">dispensers</p>
+          <p class="card__text">termómetros</p>
+        </div>
+      </div> 
+      
+      <div class="card__container2">
+        <div class="card__container--container2">
+          <img src="img/perfusion.svg" alt="" class="card__icon">
+          <h3 class="card__title">diagnóstico y banco de sangre</h3>
+          <p class="card__text">agitadores de bolsa para extracción</p>
+          <p class="card__text">selladoresde tubuladura</p>
+          <p class="card__text">contadores hematologicos y coagulometros</p>
+          <p class="card__text">fotometros de hemoglobina</p>
+          <p class="card__text">incubadores secos y húmedos</p>
+          <p class="card__text">estufas de cultivo y secado digitales</p>
+          <p class="card__text">irradiadores de sangre</p>
+          <p class="card__text">aglutinoscópios y fuentes</p>
+          <p class="card__text">agitadores de plaquetas y plasma</p>
+          <p class="card__text">heladeras y freezers</p>
+          <p class="card__text">procesadores de celulas madre</p>
+          <p class="card__text">lavadores y lectores de microplaca</p>
+          <p class="card__text">robots automatizados y pipeteadores</p>
+          <p class="card__text">medidores de gases e iones en sangre</p>
+          <p class="card__text">procesadores de aferesis</p>
+        </div>
+      </div>
+  
     </section>
 
   </main>

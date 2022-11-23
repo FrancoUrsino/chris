@@ -1,0 +1,12 @@
+@media (min-width: 600px){
+
+  .AboutUs{
+    display: grid;
+    grid-template-rows: 130px 1fr;
+  }
+
+  .card__container{
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+  }
+}
