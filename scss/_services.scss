@@ -43,7 +43,7 @@
     width: 100%;
     height: 100%;
     top: 0;
-    background-color: rgba(104, 113, 173, .4);
+    background-color: rgba(104, 113, 173, .35);
     transition: transform .5s;
     display: flex;
     justify-content: center;
@@ -53,6 +53,8 @@
     &--title{
       color: $white;
       font-weight: 600;
+      font-size: 1.6rem;
+      text-align: center;
     }
     
     &--text{
