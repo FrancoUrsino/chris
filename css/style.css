@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Prompt", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .header {
@@ -185,6 +186,33 @@
   text-transform: capitalize;
 }
 
+.footer {
+  width: 100%;
+  margin: 30px 0;
+}
+.footer__container {
+  border-top: 1.5px solid rgb(104, 113, 173);
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(80px, auto));
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+}
+.footer__img {
+  object-fit: cover;
+}
+.footer__text {
+  color: rgb(158, 158, 158);
+}
+.footer__icons a {
+  text-decoration: none;
+}
+.footer__icon {
+  width: 35px;
+  height: 35px;
+  margin: 0 5px;
+}
+
 @media (min-width: 600px) {
   .AboutUs {
     display: grid;
@@ -193,6 +221,19 @@
   .card__container {
     display: grid;
     grid-template-columns: repeat(2, 300px);
+  }
+  .footer {
+    width: 100%;
+    margin: 30px 0;
+  }
+  .footer__container {
+    border-top: 1.5px solid rgb(104, 113, 173);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    margin: 0 40px;
   }
 }
 @media (min-width: 1200px) {
