@@ -59,3 +59,18 @@
     text-transform: uppercase;
   }
 }
+
+.numbers{
+  background-color: rgba(0, 0, 0, 0.8);
+  color: $white;
+  padding: 5px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  justify-items: center;
+
+  &__tel{
+    margin: 0;
+    font-size: 14px;
+  }
+}

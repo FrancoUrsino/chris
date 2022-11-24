@@ -14,9 +14,23 @@
   &__img{
     object-fit: cover;
   }
+  
+  &__list{
+    list-style: none;
+    color: rgb(183, 179, 179);
 
-  &__text{
-    color: rgb(158, 158, 158);
+    .footer__text2{
+      display: none;
+
+      &--link{
+        text-decoration: none;
+        color: rgb(107, 107, 107);
+
+        &:hover{
+          color: $blue;
+        }
+      }
+    }
   }
   
   &__icons a{

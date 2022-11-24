@@ -23,5 +23,14 @@
       align-items: center;
       margin: 0 40px;
     }
+
+    &__list{
+      list-style: none;
+      color: rgb(183, 179, 179);
+  
+      .footer__text2{
+        display: block;
+      }
+    }
   }
 }

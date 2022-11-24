@@ -1,0 +1,71 @@
+.services{
+  width: 100%;
+  padding: 50px;
+  margin: 50px 0;
+
+  &__title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 3.4rem;
+    color: $blue;
+    text-transform: uppercase;
+  }
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(200px, auto));
+  column-gap: 2em;
+
+  &__container{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    row-gap: 2em;
+  }
+  
+  &__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    background:  radial-gradient(rgba(0, 0, 0, 0.7), rgba(79, 79, 79, 0.7));
+  }
+
+  &__hover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(104, 113, 173, .4);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &--title{
+      color: $white;
+      font-weight: 600;
+    }
+    
+    &--text{
+      color: $white;
+      font-weight: 200;
+      text-align: center;
+    }
+  }
+  
+  &__container:hover .cards__hover{
+    transform: scale(0);    
+  }
+}
+
+
+
