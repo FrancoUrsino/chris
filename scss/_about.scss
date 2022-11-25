@@ -113,3 +113,18 @@
     }
   }
 }
+
+.found{
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  margin: 2em 0;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+
+  &__title{
+    color: $blue;
+    text-transform: uppercase;
+  }
+}

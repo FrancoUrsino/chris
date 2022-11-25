@@ -1,5 +1,9 @@
 @media (min-width: 1200px){
 
+  .header__title{
+    font-size: 7rem;
+  }
+
   .information__info{
     margin: 20px 250px;
   }
@@ -7,5 +11,10 @@
   .card__container{
     display: grid;
     grid-template-columns: repeat(4, 300px);
+  }
+
+  .client{
+    display: grid;
+    grid-template-rows: 150px 1fr;
   }
 }

@@ -1,7 +1,12 @@
 .services{
   width: 100%;
   padding: 50px;
-  margin: 50px 0;
+  margin: 30px 0;
+
+  &__text{
+    margin: 5px 0 15px;
+    text-align: center;
+  }
 
   &__title{
     display: flex;
@@ -11,13 +16,15 @@
     font-size: 3.4rem;
     color: $blue;
     text-transform: uppercase;
+    margin-bottom: 50px;
   }
 }
 
 .cards{
+  margin-top: 25px;
   display: grid;
   grid-template-columns: repeat( auto-fit, minmax(200px, auto));
-  column-gap: 2em;
+  column-gap: 1.5em;
 
   &__container{
     width: 100%;
@@ -43,7 +50,7 @@
     width: 100%;
     height: 100%;
     top: 0;
-    background-color: rgba(104, 113, 173, .35);
+    background-color: rgba(104, 113, 173, .5);
     transition: transform .5s;
     display: flex;
     justify-content: center;
@@ -61,6 +68,10 @@
       color: $white;
       font-weight: 200;
       text-align: center;
+
+      .text__span{
+        color: rgb(207, 207, 207);
+      }
     }
   }
   

@@ -200,10 +200,28 @@
   text-transform: capitalize;
 }
 
+.found {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  margin: 2em 0;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+.found__title {
+  color: rgb(104, 113, 173);
+  text-transform: uppercase;
+}
+
 .services {
   width: 100%;
   padding: 50px;
-  margin: 50px 0;
+  margin: 30px 0;
+}
+.services__text {
+  margin: 5px 0 15px;
+  text-align: center;
 }
 .services__title {
   display: flex;
@@ -213,12 +231,14 @@
   font-size: 3.4rem;
   color: rgb(104, 113, 173);
   text-transform: uppercase;
+  margin-bottom: 50px;
 }
 
 .cards {
+  margin-top: 25px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-  column-gap: 2em;
+  column-gap: 1.5em;
 }
 .cards__container {
   width: 100%;
@@ -242,7 +262,7 @@
   width: 100%;
   height: 100%;
   top: 0;
-  background-color: rgba(104, 113, 173, 0.35);
+  background-color: rgba(104, 113, 173, 0.5);
   transition: transform 0.5s;
   display: flex;
   justify-content: center;
@@ -260,8 +280,188 @@
   font-weight: 200;
   text-align: center;
 }
+.cards__hover--text .text__span {
+  color: rgb(207, 207, 207);
+}
 .cards__container:hover .cards__hover {
   transform: scale(0);
+}
+
+.client {
+  display: grid;
+  grid-template-rows: 300px 1fr;
+  width: 100%;
+  margin: 30px 0;
+  justify-content: center;
+  align-items: center;
+}
+.client__title {
+  text-align: center;
+  color: rgb(104, 113, 173);
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+.client__text {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.client__img {
+  width: 100%;
+}
+
+.contact__body {
+  color: rgb(255, 255, 255);
+}
+
+.form {
+  height: 100vh;
+  padding: 35px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.7), rgba(79, 79, 79, 0.7)), url(../img/slide-1.avif);
+  background-size: cover;
+  background-position: center;
+}
+.form__container {
+  width: 100%;
+  max-width: 450px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 30px 0 rgba(48, 48, 51, 0.4);
+  backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.form__box {
+  border-color: rgb(255, 255, 255);
+  border: 1px solid var(rgba(180, 180, 180, 0.5411764706));
+  padding: 40px 50px;
+  border-radius: 20px;
+  backdrop-filter: blur;
+}
+.form__title {
+  font-size: 28px;
+  text-align: center;
+  line-height: 1.2;
+  color: rgb(255, 255, 255);
+}
+.form__container--form {
+  margin: 25px 0 20px;
+}
+.form__box--input {
+  margin: 25px;
+}
+.form__input {
+  display: grid;
+  height: 30px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid rgba(104, 113, 173, 0.8);
+  color: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  font-size: 16px;
+  outline: none;
+}
+.form__input::placeholder {
+  color: rgb(255, 255, 255);
+}
+.form__label {
+  color: rgb(255, 255, 255);
+  padding-bottom: 5px;
+}
+.form__checks {
+  font-size: 13px;
+  align-items: flex-start;
+  font-weight: 300;
+}
+.form__checks a {
+  color: rgb(104, 113, 173);
+  text-shadow: rgba(0, 0, 0, 0.3) 1px 1px;
+}
+.form__checks a:hover {
+  color: rgb(255, 255, 255);
+}
+.form .btn__neon {
+  position: relative;
+  display: inline-block;
+  padding: 10px 30px;
+  /*color: $blanco;*/
+  letter-spacing: 4px;
+  font-size: 16px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0.465)) 0 0/400% 100%;
+  animation: move-bg 3s infinite alternate-reverse;
+  background-clip: var(-webkit-background-clip);
+  -webkit-background-clip: text;
+  color: transparent;
+  border: none;
+}
+@keyframes move-bg {
+  to {
+    background-position: 400% 0;
+  }
+}
+.form .btn__neon:hover {
+  background: rgb(104, 113, 173);
+  box-shadow: 0 0 10px rgba(102, 117, 215, 0.553), 0 0 40px rgba(102, 117, 215, 0.553), 0 0 80px rgba(102, 117, 215, 0.553);
+  transition-delay: 1.25s;
+  color: rgb(255, 255, 255);
+}
+.form .btn__neon span {
+  position: absolute;
+  display: block;
+}
+.form .btn__neon #span1 {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(102, 117, 215, 0.553));
+}
+.form .btn__neon:hover #span1 {
+  left: 100%;
+  transition: 1s;
+}
+.form .btn__neon #span2 {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, rgba(102, 117, 215, 0.553));
+}
+.form .btn__neon:hover #span2 {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+.form .btn__neon #span3 {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, rgba(102, 117, 215, 0.553));
+}
+.form .btn__neon:hover #span3 {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+.form .btn__neon #span4 {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, rgba(102, 117, 215, 0.553));
+}
+.form .btn__neon:hover #span4 {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
 }
 
 .footer {
@@ -413,14 +613,35 @@
   .footer__list .footer__text2 {
     display: block;
   }
+  .client {
+    display: grid;
+    grid-template-rows: 200px 1fr;
+  }
+  .found {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
 }
 @media (min-width: 1200px) {
+  .header__title {
+    font-size: 7rem;
+  }
   .information__info {
     margin: 20px 250px;
   }
   .card__container {
     display: grid;
     grid-template-columns: repeat(4, 300px);
+  }
+  .client {
+    display: grid;
+    grid-template-rows: 150px 1fr;
   }
 }
 
