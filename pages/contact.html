@@ -19,8 +19,8 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body class="contact__body">
-  <header class="header">
-    <nav class="navbar navbar-expand-lg nav">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark nav">
       <div class="container-fluid">
         <img src="../img/logo.jpg" alt="EFICAP">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,44 +47,77 @@
         </div>
       </div>
     </nav>
-    <section class="header__info">
-      <h1 class="header__title">EFICAP</h1>
-      <h2 class="header__subTitle">servicio técnico de electromedicina</h2>
-    </section>
+    
   </header>
 
   <main>
+    
+    <section class="section">
+      <div class="form">
+        <div class="form__container">
+          <div class="form__box">
+            <h3 class="form__title">CONTACTANOS</h3>
+            <form action="https://formspree.io/f/xgeqbkel" method="POST">
+              <div class="form__box--input">
+                <label for="name" class="form__label">NOMBRE</label>
+                <input type="text" id="name" class="form__input">
+              </div>
+              <div class="form__box--input">
+                <label for="email" class="form__label">EMAIL</label>
+                <input type="email" id="email" name="email" class="form__input">
+              </div>
+              <div class="form__box--input">
+                <textarea placeholder="deja aca tu mensaje" name="message" class="form__input"></textarea>
+              </div>
+              <button type="submit" class="btn__neon mx-4">
+                <span id="span1"></span>
+                <span id="span2"></span>
+                <span id="span3"></span>
+                <span id="span4"></span>enviar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="information">
+          <div class="information__container">
+            <h3 class="information__container--title">INFORMACIÓN</h3>
+            <div class="information__container--container">
+              <ul class="information__container--container--list">
+                <li class="information__container--container--items">
+                  <img src="../img/gmail.svg" alt=""> eficap@eficap.com.ar</li>
+                <li class="information__container--container--items">
+                  <img src="../img/wpp.svg" alt=""> +54 15322047956</li>
+                <li class="information__container--container--items">
+                  <img src="../img/llamada.svg" alt=""> 4924-4466</li>
+              </ul>
+            </div>
+            <h3 class="information__container--title">SUCURSALES</h3>
+            <div class="information__container--container">
+              <p class="information__container--container--text">Pueden encontrarnos de lunes a viernes de 9 a 18hs</p>
+              <div class="information__container--container--site">
+                <ul class="information__container--container--list">
+                  <li class="information__container--container--items2">Distrito Tecnológico</li>
+                  <li class="information__container--container--items2">Parque Patricios</li>
+                  <li class="information__container--container--items2">CABA</li>
+                </ul>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13131.255677370196!2d-58.4012211!3d-34.6341424!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6861764e9bda7a41!2sEFICAP%20%3A%20Servicio%20T%C3%A9cnico%20y%20Calibraci%C3%B3n%20de%20Pipetas!5e0!3m2!1ses-419!2sar!4v1669343763592!5m2!1ses-419!2sar" width="130" height="110" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <div class="information__container--container--site">
+                <ul class="information__container--container--list">
+                  <li class="information__container--container--items2">Ciudad de La Plata</li>
+                  <li class="information__container--container--items2">Provincia de Bs As</li>
+                </ul>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52343.07030770173!2d-57.98818990336298!3d-34.920452898707474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62b1f0085a1%3A0xbcfc44f0547312e3!2sLa%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1671323430804!5m2!1ses-419!2sar" width="130" height="110" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
     <div class="numbers">
       <p class="numbers__tel">TELÉFONO: 4924-4466</p>
       <p class="numbers__tel">URGENCIAS: 1532047956</p>
     </div>
-
-    <section class="form">
-      <div class="form__container">
-        <div class="form__box">
-          <h3 class="form__title">CONTACTANOS</h3>
-          <form action="https://formspree.io/f/xgeqbkel" method="POST">
-            <div class="form__box--input">
-              <label for="name" class="form__label">NOMBRE</label>
-              <input type="text" id="name" class="form__input">
-            </div>
-            <div class="form__box--input">
-              <label for="email" class="form__label">EMAIL</label>
-              <input type="email" id="email" name="email" class="form__input">
-            </div>
-            <div class="form__box--input">
-              <textarea placeholder="deja aca tu mensaje" name="message" class="form__input"></textarea>
-            </div>
-            <button type="submit" class="btn__neon mx-4">
-              <span id="span1"></span>
-              <span id="span2"></span>
-              <span id="span3"></span>
-              <span id="span4"></span>enviar</button>
-          </form>
-        </div>
-      </div>
-    </section>
-      
   </main>
 
   <footer class="footer">
