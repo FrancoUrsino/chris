@@ -14,34 +14,34 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <!--LINK FAVICON-->
-  <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../img/icon.ico" type="image/x-icon">
   <!--LINK CSS-->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
   <header class="header">
     <nav class="navbar navbar-expand-lg nav">
       <div class="container-fluid">
-        <img src="img/logo.jpg" alt="EFICAP">
+        <img src="../img/logo.jpg" alt="EFICAP">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: flex-end;">
           <ul class="navbar-nav">
             <li class="nav-item nav__item">
-              <a class="nav-link nav__link" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link nav__link" aria-current="page" href="../index.html">Inicio</a>
             </li>
             <li class="nav-item nav__item">
-              <a class="nav-link nav__link" href="pages/About.html">Quienes Somos</a>
+              <a class="nav-link nav__link" href="#">Quienes Somos</a>
             </li>
             <li class="nav-item nav__item">
-              <a class="nav-link nav__link" href="pages/services.html">Servicios</a>
+              <a class="nav-link nav__link" href="services.html">Servicios</a>
             </li>
             <li class="nav-item nav__item">
-              <a class="nav-link nav__link" href="pages/clientes.html">Clientes</a>
+              <a class="nav-link nav__link" href="clientes.html">Clientes</a>
             </li>
             <li class="nav-item nav__item">
-              <a class="nav-link nav__link" href="pages/contact.html">Contactanos</a>
+              <a class="nav-link nav__link" href="contact.html">Contactanos</a>
             </li>
           </ul>
         </div>
@@ -52,60 +52,45 @@
       <h2 class="header__subTitle">servicio técnico de electromedicina</h2>
     </section>
   </header>
+
   <main>
     <div class="numbers">
       <p class="numbers__tel">TELÉFONO: 4924-4466</p>
       <p class="numbers__tel">URGENCIAS: 153 204 7956</p>
     </div>
-    <section class="information">
-      <p class="information__text p-5">Fundamos nuestra empresa en el año 1997 pensando en que forma podriamos resultar utiles dentro de la electromedicina y bioingenieria en nuestro pais y latinoamerica.<br>Asi entonces, logramos brindar servicios de reparacion, mantenimiento preventivo, calibraciones, manejo de normativas de calidad, auditorias y asistencia informatica en una amplia variedad de instrumental medico, banco de sangre diagnóstico, laboratorios y medicina estética.
-      </p>
-      <div class="information__info">
-        <h2 class="information__title">servicios acorde a lo solicitado por:</h2>
-        <ul class="information__list">
-          <li class="information__items">ANMAT DISPOSICIÓN 1682 - BANCO DE SANGRE</li>
-          <li class="information__items">PLAN NACIONAL DE SANGRE CAPÍTULO E3 PÁG. 11</li>
-          <li class="information__items">ORGANIZACIÓN PANAMERICANA - GESTIÓN DE CALIDAD - PÁG. 231</li>
-          <li class="information__items">MINISTERIO DE SALUD RESOLUCIÓN 797/2013</li>
-          <li class="information__items">INCUCAI - RESOLUCIÓN 406 - HISTOCOMPATIBILIDAD</li>
-          <li class="information__items">UNC LABORATORIO DE HEMODERIVADOS RECOLECCIÓN DE PLASMA</li>
-          <li class="information__items">JOINT COMMISSION ACREDITACIÓN HOSPITALARIA</li>
-          <li class="information__items">AABB/ISO 9001 GESTIÓN DE CALIDAD</li>
-          <li class="information__items">PAL FUNDACIÓN BIOQUÍMICA</li>
-          <li class="information__items">CAP - COLEGIO AMERICANO DE PATOLOGÍA</li>
-        </ul>
-      </div>
-    </section>
 
     <section class="AboutUs" id="QuienesSomos">
-      <p class="AboutUs__text">CONTAMOS CON PROFESIONALES MATRICULADOS CON ASISTENCIA A CURSOS DE CAPACITACION TECNICA NACIONAL E INTERNACIONAL, CON OBTENCION DE CERTIFICACIONES PARA INSTALAR, CONSERVAR Y REPARAR DISTINTOS TIPOS Y MODELOS DE EQUIPAMIENTOS EN ELECTROMEDICINA.</p>
-      <img src="img/4.jpg"  class="AboutUs__img" alt="">
+      <div class="AboutUs__container">
+        <p class="AboutUs__text">CONTAMOS CON PROFESIONALES MATRICULADOS CON ASISTENCIA A CURSOS DE CAPACITACION TECNICA NACIONAL E INTERNACIONAL, CON OBTENCION DE CERTIFICACIONES PARA INSTALAR, CONSERVAR Y REPARAR DISTINTOS TIPOS Y MODELOS DE EQUIPAMIENTOS EN ELECTROMEDICINA.</p>
+        <!-- <img src="../img/FOTO_SERVICE.jpg"  class="AboutUs__img" alt=""> -->
+        <img src="../img/CERTIFICADOS.jpg"  class="AboutUs__img" alt="">
+      </div>
       <h2 class="AboutUs__SubTitle">Sectores en los que trabajamos</h2>
 
       <!--INFORMATICA-->
       <div class="card__container">
         <div class="card__container--container">
-          <img src="img/laptop-_1_.svg" alt="" class="card__icon">
+          <img src="../img/laptop-_1_.svg" alt="" class="card__icon">
           <h3 class="card__title">informática</h3>
           <p class="card__text">software | Hardware</p>
           <p class="card__text">Mantenimiento</p>
           <p class="card__text">Armado de Equipamiento</p>
         </div>
         <div class="card__container--container">
-          <img src="img/chemistry.svg" alt="" class="card__icon">
+          <img src="../img/chemistry.svg" alt="" class="card__icon">
           <h3 class="card__title">laboratorios</h3>
           <p class="card__text">serología - biológica molecular - patología</p>
           <p class="card__text">histocompatibilidad - citrogenética</p>
         </div>
         <div class="card__container--container">
-          <img src="img/spa.svg" alt="" class="card__icon">
+          <img src="../img/spa.svg" alt="" class="card__icon">
           <h3 class="card__title">medicina estética</h3>
           <p class="card__text">luz pulsada - criolipólisis</p>
           <p class="card__text">cavitadores - ultrasonido</p>
           <p class="card__text">plasma rico en plaquetas</p>
         </div>
         <div class="card__container--container">
-          <img src="img/tester.svg" alt="" class="card__icon">
+          <img src="../img/tester.svg" alt="" class="card__icon">
           <h3 class="card__title">calibraciones</h3>
           <p class="card__text">pipetas mecánicas y electronicas</p>
           <p class="card__text">dispensers</p>
@@ -115,7 +100,7 @@
       
       <div class="card__container2">
         <div class="card__container--container2">
-          <img src="img/perfusion.svg" alt="" class="card__icon">
+          <img src="../img/perfusion.svg" alt="" class="card__icon">
           <h3 class="card__title">diagnóstico y banco de sangre</h3>
           <p class="card__text">agitadores de bolsa para extracción</p>
           <p class="card__text">selladoresde tubuladura</p>
@@ -140,23 +125,23 @@
 
   <footer class="footer">
     <div class="footer__container">
-      <img src="img/logo.jpg" alt="" class="footer__img">
+      <img src="../img/logo.jpg" alt="" class="footer__img">
       <ul class="footer__list">
         <li class="footer__text">1997-2023&copy;EFICAP | All Rigths Reserved</li>
-        <li class="footer__text2">Diseño y Desarrolo por <a href="mailto:francooursinoo@gmail.com">Franco Ursino</a></li>
+        <li class="footer__text2">Diseño y Desarrolo por <a href="mailto:francooursinoo@gmail.com" class="footer__text2--link">Franco Ursino</a></li>
       </ul>
       <div class="footer__icons">
         <a href="mailto:eficap@eficap.com.ar">
-          <img src="img/gmail.svg" alt="" class="footer__icon">
+          <img src="../img/gmail.svg" alt="" class="footer__icon">
         </a>
         <a href="#">
-          <img src="img/wpp.svg" alt="" class="footer__icon">
+          <img src="../img/wpp.svg" alt="" class="footer__icon">
         </a>
         <a href="#">
-          <img src="img/instagram.svg" alt="" class="footer__icon">
+          <img src="../img/instagram.svg" alt="" class="footer__icon">
         </a>
         <a href="tel:+541138460917">
-          <img src="img/llamada.svg" alt="" class="footer__icon">
+          <img src="../img/llamada.svg" alt="" class="footer__icon">
         </a>
       </div>
     </div>
