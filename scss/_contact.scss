@@ -27,6 +27,11 @@
       padding: 5px 10px;
     }
   }
+  
+  &__link--active{
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+  }
 }
 
 .section{
