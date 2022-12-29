@@ -112,12 +112,13 @@
 }
 .AboutUs__container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
   justify-content: center;
   align-items: center;
   margin: 10px auto;
   row-gap: 2em;
   padding: 10px;
+  width: auto;
 }
 .AboutUs__container .AboutUs__text {
   text-align: center;
@@ -127,8 +128,9 @@
 }
 .AboutUs__container .AboutUs__img {
   justify-self: center;
-  width: 360px;
-  height: 320px;
+  width: 600px;
+  height: 400px;
+  object-fit: contain;
 }
 .AboutUs__SubTitle {
   color: rgb(104, 113, 173);
@@ -140,7 +142,7 @@
 
 .card__container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 350px;
   justify-content: center;
   justify-items: center;
   margin: 20px 5px;
@@ -622,7 +624,7 @@
     row-gap: 1rem;
   }
   .card__container2 .card__container--container2 {
-    width: 360px;
+    width: 350px;
     min-height: 300px;
     text-align: center;
     align-items: center;
@@ -666,6 +668,17 @@
   }
   .information2 {
     width: 360px;
+  }
+  .AboutUs {
+    width: auto;
+  }
+  .AboutUs__container {
+    grid-template-columns: repeat(auto-fit, minmax(340px, auto));
+  }
+  .AboutUs__container .AboutUs__img {
+    justify-self: center;
+    width: 340px;
+    height: 300px;
   }
 }
 @media (min-width: 480px) {
@@ -723,6 +736,17 @@
   .information2 {
     width: 450px;
   }
+  .AboutUs {
+    width: auto;
+  }
+  .AboutUs__container {
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+  }
+  .AboutUs__container .AboutUs__img {
+    justify-self: center;
+    width: 400px;
+    height: 340px;
+  }
 }
 @media (min-width: 600px) {
   .AboutUs {
@@ -767,6 +791,20 @@
     text-align: center;
     margin-bottom: 20px;
   }
+  .AboutUs {
+    width: auto;
+  }
+  .AboutUs__container {
+    grid-template-columns: repeat(auto-fit, minmax(500px, auto));
+  }
+  .AboutUs__container .AboutUs__img {
+    justify-self: center;
+    width: 500px;
+    height: 380px;
+  }
+  .AboutUs__SubTitle {
+    padding-top: 200px;
+  }
 }
 @media (min-width: 1200px) {
   .header__title {
@@ -782,6 +820,17 @@
   .client {
     display: grid;
     grid-template-rows: 150px 1fr;
+  }
+  .AboutUs {
+    width: auto;
+  }
+  .AboutUs__container {
+    grid-template-columns: repeat(auto-fit, minmax(450px, auto));
+  }
+  .AboutUs__container .AboutUs__img {
+    justify-self: center;
+    width: 600px;
+    height: 440px;
   }
 }
 

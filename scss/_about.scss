@@ -8,12 +8,13 @@
   
   &__container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
     justify-content: center;
     align-items: center;
     margin: 10px auto;
     row-gap: 2em;
     padding: 10px;
+    width: auto;
   
     .AboutUs__text{
       text-align: center;
@@ -24,9 +25,9 @@
 
     .AboutUs__img{
       justify-self: center;
-      width: 360px;
-      height: 320px;
-      //  object-fit: cover;
+      width: 600px;
+      height: 400px;
+      object-fit: contain;
     }
   }
 
@@ -41,7 +42,7 @@
 
 .card__container{
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 350px;
   justify-content: center;
   justify-items: center;
   margin: 20px 5px;

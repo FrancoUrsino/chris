@@ -9,7 +9,7 @@
     row-gap: 1rem;
   
     .card__container--container2{
-      width: 360px;
+      width: 350px;
       min-height: 300px;
       text-align: center;
       align-items: center;
@@ -61,5 +61,17 @@
 
   .information2{
     width: 360px;
+  }
+
+  .AboutUs{
+    width: auto;
+    &__container{
+      grid-template-columns: repeat(auto-fit, minmax(340px, auto));
+      .AboutUs__img{
+        justify-self: center;
+        width: 340px;
+        height: 300px; 
+      }
+    }
   }
 }  

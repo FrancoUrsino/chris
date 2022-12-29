@@ -49,4 +49,20 @@
     text-align: center;
     margin-bottom: 20px;
   }
+
+  .AboutUs{
+    width: auto;
+    &__container{
+      grid-template-columns: repeat(auto-fit, minmax(500px, auto));
+      .AboutUs__img{
+        justify-self: center;
+        width: 500px;
+        height: 380px; 
+      }
+    }
+
+    &__SubTitle{
+      padding-top: 200px;
+    }
+  }
 }

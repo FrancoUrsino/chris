@@ -17,4 +17,16 @@
     display: grid;
     grid-template-rows: 150px 1fr;
   }
+
+  .AboutUs{
+    width: auto;
+    &__container{
+      grid-template-columns: repeat(auto-fit, minmax(450px, auto));
+      .AboutUs__img{
+        justify-self: center;
+        width: 600px;
+        height: 440px; 
+      }
+    }
+  }
 }

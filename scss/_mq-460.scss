@@ -62,4 +62,16 @@
   .information2{
     width: 450px;
   }
+
+  .AboutUs{
+    width: auto;
+    &__container{
+      grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+      .AboutUs__img{
+        justify-self: center;
+        width: 400px;
+        height: 340px; 
+      }
+    }
+  }
 }  
