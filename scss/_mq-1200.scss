@@ -8,6 +8,12 @@
     margin: 20px 250px;
   }
 
+  .cards{
+    grid-template-columns: repeat(5, 230px);
+    justify-content: center;
+    
+  }
+
   .card__container{
     display: grid;
     grid-template-columns: repeat(4, 300px);
@@ -27,6 +33,13 @@
         width: 600px;
         height: 440px; 
       }
+    }
+  }
+
+  .section2{
+    & img{
+      width: 500px;
+      height: 500px;
     }
   }
 }

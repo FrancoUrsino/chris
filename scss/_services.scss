@@ -80,5 +80,23 @@
   }
 }
 
+.section2{
+  width: 100%;
+  display: grid;
+
+  &__container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    gap: 2em;
+    justify-content: center;
+
+    &--1, &--2{
+      & img{
+        width: 330px;
+        height: 330px;
+      }
+    }
+  }
+}
 
 
