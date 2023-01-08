@@ -264,6 +264,10 @@
         }
       }
 
+      &--text{
+        font-size: 15px;
+      }
+
       &--items{
         margin-top: 10px;
         justify-content: left;
@@ -279,4 +283,10 @@
       }
     }
   }
+}
+
+.bsas{
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
 }

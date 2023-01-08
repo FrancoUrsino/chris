@@ -577,6 +577,9 @@
   height: 24px;
   padding-right: 5px;
 }
+.information2__container--container--text {
+  font-size: 15px;
+}
 .information2__container--container--items {
   margin-top: 10px;
   justify-content: left;
@@ -588,6 +591,12 @@
   align-items: center;
   justify-content: center;
   padding-bottom: 5px;
+}
+
+.bsas {
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
 }
 
 .footer {
