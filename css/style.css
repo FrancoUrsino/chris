@@ -132,6 +132,15 @@
   height: 400px;
   object-fit: contain;
 }
+.AboutUs__img--2 {
+  display: flex;
+  width: 350px;
+  height: 320px;
+  justify-self: center;
+  align-items: center;
+  object-fit: cover;
+  margin-top: 2em;
+}
 .AboutUs__SubTitle {
   color: rgb(104, 113, 173);
   text-align: center;
@@ -704,6 +713,10 @@
     width: 340px;
     height: 300px;
   }
+  .AboutUs__img--2 {
+    width: 340px;
+    height: 300px;
+  }
 }
 @media (min-width: 480px) {
   .card__container2 {
@@ -771,6 +784,10 @@
     width: 400px;
     height: 340px;
   }
+  .AboutUs__img--2 {
+    width: 430px;
+    height: 370px;
+  }
 }
 @media (min-width: 600px) {
   .AboutUs {
@@ -827,7 +844,11 @@
     height: 380px;
   }
   .AboutUs__SubTitle {
-    padding-top: 200px;
+    padding: 30px 0;
+  }
+  .AboutUs__img--2 {
+    width: 560px;
+    height: 450px;
   }
 }
 @media (min-width: 1200px) {
@@ -859,6 +880,10 @@
     justify-self: center;
     width: 600px;
     height: 440px;
+  }
+  .AboutUs__img--2 {
+    width: 750px;
+    height: 420px;
   }
   .section2 img {
     width: 500px;
