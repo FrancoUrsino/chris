@@ -82,6 +82,7 @@
 
 .information__text {
   font-size: 1.2rem;
+  padding: 20px 0;
 }
 
 .information__info {
@@ -128,7 +129,7 @@
 }
 .AboutUs__container .AboutUs__img {
   justify-self: center;
-  width: 600px;
+  width: 1200px;
   height: 400px;
   object-fit: contain;
 }
@@ -266,7 +267,7 @@
 .cards {
   margin-top: 25px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
   column-gap: 1.5em;
 }
 .cards__container {
@@ -399,7 +400,6 @@
 }
 
 .form {
-  height: 90vh;
   padding: 35px 15px;
   display: flex;
   align-items: center;
@@ -546,7 +546,6 @@
 }
 
 .information2 {
-  height: 100vh;
   margin: auto 0;
   width: 450px;
   padding: 35px 15px;
@@ -616,7 +615,7 @@
 .footer__container {
   border-top: 1.5px solid rgb(104, 113, 173);
   display: grid;
-  grid-template-rows: repeat(auto-fit, minmax(80px, auto));
+  grid-template-rows: repeat(auto-fit, minmax(150px, auto));
   justify-content: space-evenly;
   justify-items: center;
   align-items: center;
@@ -809,7 +808,7 @@
     justify-content: space-evenly;
     justify-items: center;
     align-items: center;
-    margin: 0 40px;
+    margin: 0 15px;
   }
   .footer__list {
     list-style: none;
@@ -840,15 +839,31 @@
   }
   .AboutUs__container .AboutUs__img {
     justify-self: center;
-    width: 500px;
+    width: 590px;
     height: 380px;
   }
   .AboutUs__SubTitle {
     padding: 30px 0;
   }
   .AboutUs__img--2 {
-    width: 560px;
+    width: 590px;
+    height: 430px;
+  }
+}
+@media (min-width: 800px) {
+  .AboutUs__container {
+    grid-template-columns: 400px 1fr;
+    overflow: hidden;
+  }
+  .AboutUs__container .AboutUs__img {
+    width: 100%;
     height: 450px;
+  }
+  .AboutUs .AboutUs__img--2 {
+    width: 85%;
+  }
+  .card__container {
+    column-gap: 3em;
   }
 }
 @media (min-width: 1200px) {
@@ -856,15 +871,16 @@
     font-size: 7rem;
   }
   .information__info {
-    margin: 20px 250px;
+    margin: 20px 150px;
   }
   .cards {
-    grid-template-columns: repeat(5, 230px);
+    grid-template-columns: repeat(5, 210px);
     justify-content: center;
   }
   .card__container {
     display: grid;
     grid-template-columns: repeat(4, 300px);
+    column-gap: 0;
   }
   .client {
     display: grid;
@@ -874,11 +890,11 @@
     width: auto;
   }
   .AboutUs__container {
-    grid-template-columns: repeat(auto-fit, minmax(450px, auto));
+    grid-template-columns: 1fr 1fr;
   }
   .AboutUs__container .AboutUs__img {
     justify-self: center;
-    width: 600px;
+    width: 100%;
     height: 440px;
   }
   .AboutUs__img--2 {

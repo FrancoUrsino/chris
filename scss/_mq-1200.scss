@@ -5,11 +5,11 @@
   }
 
   .information__info{
-    margin: 20px 250px;
+    margin: 20px 150px;
   }
 
   .cards{
-    grid-template-columns: repeat(5, 230px);
+    grid-template-columns: repeat(5, 210px);
     justify-content: center;
     
   }
@@ -17,6 +17,7 @@
   .card__container{
     display: grid;
     grid-template-columns: repeat(4, 300px);
+    column-gap: 0;
   }
 
   .client{
@@ -27,10 +28,10 @@
   .AboutUs{
     width: auto;
     &__container{
-      grid-template-columns: repeat(auto-fit, minmax(450px, auto));
+      grid-template-columns: 1fr 1fr;
       .AboutUs__img{
         justify-self: center;
-        width: 600px;
+        width: 100%;
         height: 440px; 
       }
     }

@@ -23,7 +23,7 @@
 .cards{
   margin-top: 25px;
   display: grid;
-  grid-template-columns: repeat( auto-fit, minmax(200px, auto));
+  grid-template-columns: repeat( auto-fit, minmax(350px, auto));
   column-gap: 1.5em;
 
   &__container{
