@@ -23,6 +23,10 @@
   .client{
     display: grid;
     grid-template-rows: 150px 1fr;
+    grid-template-columns: 1000px;
+    width: 90%;
+    margin: 0 auto;
+
   }
 
   .AboutUs{
@@ -43,8 +47,11 @@
 
   .section2{
     & img{
-      width: 500px;
+      width: 100%;
       height: 500px;
+    }
+    &__container{
+      column-gap: 3em;
     }
   }
 }
