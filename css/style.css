@@ -307,11 +307,11 @@
 }
 .cards__hover--text {
   color: rgb(255, 255, 255);
-  font-weight: 200;
+  font-weight: 300;
   text-align: center;
 }
 .cards__hover--text .text__span {
-  color: rgb(207, 207, 207);
+  color: rgb(255, 255, 255);
 }
 .cards__container:hover .cards__hover {
   transform: scale(0);
@@ -599,6 +599,9 @@
   align-items: center;
   justify-content: center;
   padding-bottom: 5px;
+}
+.information2__container--container--text2 {
+  font-size: 14px;
 }
 
 .bsas {

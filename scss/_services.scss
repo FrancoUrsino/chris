@@ -66,11 +66,11 @@
     
     &--text{
       color: $white;
-      font-weight: 200;
+      font-weight: 300;
       text-align: center;
 
       .text__span{
-        color: rgb(207, 207, 207);
+        color: $white;
       }
     }
   }
