@@ -256,6 +256,7 @@
         justify-content: center;
         justify-items: left;
         align-items: center;
+        font-size: 14px;
 
         & img{
           width: 24px;
@@ -282,9 +283,10 @@
         padding-bottom: 5px;
       }
 
-      &--text2{
-        font-size:  14px;
-      }
+      
+    }
+    &--container--text2{
+      font-size: 14px;
     }
   }
 }
