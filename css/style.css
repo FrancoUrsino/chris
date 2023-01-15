@@ -87,9 +87,10 @@
 
 .information__info {
   background-color: rgb(217, 217, 217);
-  margin: 20px 40px;
+  margin: 20px auto;
   text-align: center;
   padding: 5px 10px;
+  width: 90%;
 }
 .information__info .information__title {
   text-transform: uppercase;
@@ -699,10 +700,15 @@
     justify-items: center;
   }
   .information {
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     justify-content: center;
     justify-items: center;
+  }
+  .information__text {
+    width: 85%;
+    margin: 0 auto;
+    font-size: 1.2rem;
   }
   .information2 {
     width: 360px;
@@ -880,7 +886,8 @@
     font-size: 7rem;
   }
   .information__info {
-    margin: 20px 150px;
+    margin: 20px auto;
+    width: 70%;
   }
   .cards {
     grid-template-columns: repeat(5, 210px);

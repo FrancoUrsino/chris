@@ -53,10 +53,16 @@
   }
   
   .information{
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     justify-content: center;
     justify-items: center;
+
+    &__text{
+      width: 85%;
+      margin: 0 auto;
+      font-size: 1.2rem;
+    }
   }
 
   .information2{
