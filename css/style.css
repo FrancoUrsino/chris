@@ -84,6 +84,14 @@
   background-color: rgba(47, 47, 47, 0.05);
 }
 
+.secundario {
+  background: radial-gradient(rgba(0, 0, 0, 0.7), rgba(79, 79, 79, 0.7)), url(../img/header-secundario.webp);
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  overflow: hidden;
+}
+
 .information__text {
   font-size: 1.2rem;
   padding: 20px 0;
